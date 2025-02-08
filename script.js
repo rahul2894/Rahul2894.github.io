@@ -1,3 +1,6 @@
+const secretCode = ['divu', 'sonu', 'divyani']; // Replace with your secret code
+const nextPageUrl = 'main.html'; // Replace with the URL of the new page
+
 const form = document.getElementById('login-form');
 const codeInput = document.getElementById('code');
 const submitBtn = document.getElementById('submit-btn');
