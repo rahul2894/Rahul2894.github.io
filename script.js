@@ -1,4 +1,4 @@
-const secretCode = ['divu', 'sonu', 'divyani']; // Replace with your secret code
+const secretCode = new Set(['divu', 'sonu', 'divyani']); // Replace with your secret code
 const nextPageUrl = 'main.html'; // Replace with the URL of the new page
 
 const form = document.getElementById('login-form');
@@ -9,7 +9,7 @@ const resultDiv = document.getElementById('result');
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const userInput = codeInput.value.trim();
-	if (secretCodes.includes(userInput)) {
+	if (secretCodes.has(userInput) {
 		resultDiv.innerHTML = 'Baby';
 		window.location.href = nextPageUrl; // Redirect to new page
 	} else {
