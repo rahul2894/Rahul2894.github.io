@@ -3,7 +3,7 @@ const codeInput = document.getElementById('code');
 const submitBtn = document.getElementById('submit-btn');
 const resultDiv = document.getElementById('result');
 
-const secretCode = 'Divyani'; // Replace with your secret code
+const secretCode = ['Divu', 'Divyani', 'sonu', 'babada']; // Replace with your secret code
 const nextPageUrl = 'main.html'; // Replace with the URL of the new page
 
 form.addEventListener('submit', (e) => {
@@ -13,6 +13,6 @@ form.addEventListener('submit', (e) => {
 		resultDiv.innerHTML = 'Baby';
 		window.location.href = nextPageUrl; // Redirect to new page
 	} else {
-		resultDiv.innerHTML = 'Naa Tum meri baby nhi hoo kon hooo tum kaha hai mera babada';
+		resultDiv.innerHTML = 'Naa Tum mera babada nhi hoo kon hooo tum kaha hai mera babada';
 	}
 });
