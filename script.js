@@ -9,7 +9,7 @@ const nextPageUrl = 'main.html'; // Replace with the URL of the new page
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const userInput = codeInput.value.trim();
-	if (userInput === secretCode) {
+	if (secretCodes.includes(userInput)) {
 		resultDiv.innerHTML = 'Baby';
 		window.location.href = nextPageUrl; // Redirect to new page
 	} else {
